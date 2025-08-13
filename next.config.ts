@@ -14,8 +14,8 @@ const nextConfig: NextConfig = {
   },
   // Enable static optimization
   trailingSlash: false,
-  // Ensure app directory is properly detected
-  experimental: {},
+  // Explicitly configure src directory
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
 };
 
 export default nextConfig;
