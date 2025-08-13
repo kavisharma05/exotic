@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   // Explicitly configure src directory
   pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  // Enable React Strict Mode for better development experience
+  reactStrictMode: true,
 };
 
 export default nextConfig;

@@ -1,0 +1,4 @@
+[33meccea52[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Fix Vercel build issues: Update Next.js config for proper SSR support
+[33med2daa9[m Fix build errors: replace unescaped entities, fix navigation links, remove unused imports
+[33mb651671[m[33m ([m[1;31morigin/main[m[33m)[m Add files via upload
+[33mfcf86ac[m Add files via upload
