@@ -1,23 +1,34 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Ensure compatibility with Vercel and src directory structure
+  // Image configuration for external hosts
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  // Server-side rendering configuration
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
     ignoreDuringBuilds: false,
   },
   typescript: {
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
     ignoreBuildErrors: false,
   },
-  // Enable static optimization
+  // Server configuration
   trailingSlash: false,
-  // Explicitly configure src directory
   pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  // Enable React Strict Mode for better development experience
   reactStrictMode: true,
+  // Ensure server-side rendering
+  experimental: {
+    serverActions: {
+      allowedOrigins: ['localhost:3000'],
+    },
+  },
 };
 
 export default nextConfig;
