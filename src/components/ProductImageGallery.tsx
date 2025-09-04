@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, ZoomIn, X } from "lucide-react";
 import Image from "next/image";
 
@@ -21,6 +21,17 @@ export default function ProductImageGallery({
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
+  // Handle image navigation
+  const handleNextImage = useCallback(() => {
+    const nextIndex = selectedImageIndex === images.length - 1 ? 0 : selectedImageIndex + 1;
+    onImageChange(nextIndex);
+  }, [selectedImageIndex, images.length, onImageChange]);
+
+  const handlePrevImage = useCallback(() => {
+    const prevIndex = selectedImageIndex === 0 ? images.length - 1 : selectedImageIndex - 1;
+    onImageChange(prevIndex);
+  }, [selectedImageIndex, images.length, onImageChange]);
+
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -37,18 +48,7 @@ export default function ProductImageGallery({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isZoomed, selectedImageIndex]);
-
-  // Handle image navigation
-  const handleNextImage = () => {
-    const nextIndex = selectedImageIndex === images.length - 1 ? 0 : selectedImageIndex + 1;
-    onImageChange(nextIndex);
-  };
-
-  const handlePrevImage = () => {
-    const prevIndex = selectedImageIndex === 0 ? images.length - 1 : selectedImageIndex - 1;
-    onImageChange(prevIndex);
-  };
+  }, [isZoomed, selectedImageIndex, handleNextImage, handlePrevImage]);
 
   // Handle touch gestures for mobile swipe
   const handleTouchStart = (e: React.TouchEvent) => {

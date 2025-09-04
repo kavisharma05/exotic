@@ -53,7 +53,7 @@ export interface ProductCardProps {
 
 // Product detail page props
 export interface ProductDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }

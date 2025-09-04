@@ -23,7 +23,7 @@ export default function ProductNotFound() {
           {/* Error Message */}
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Product Not Found</h1>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Sorry, we couldn't find the product you're looking for. It may have been removed or the link might be incorrect.
+            Sorry, we couldn&apos;t find the product you&apos;re looking for. It may have been removed or the link might be incorrect.
           </p>
 
           {/* Action Buttons */}

@@ -1,16 +1,11 @@
 "use client";
 
 import { Star } from "lucide-react";
-import { useCallback } from "react";
 import Link from "next/link";
-import { Product, ProductCardProps } from "@/types/product";
+import Image from "next/image";
+import { ProductCardProps } from "@/types/product";
 
 export default function ProductCard({ product, viewMode = "grid" }: ProductCardProps) {
-  const handleLearnMore = useCallback(() => {
-    // This will be handled by the Link component now
-    console.log(`Learning more about product: ${product.name}`);
-  }, [product.name]);
-
   // Use primary color theme for all cards to match brand colors
   const theme = { hover: 'from-primary/5', badge: 'bg-primary' };
 
@@ -29,10 +24,12 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
                 </span>
               </div>
             )}
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               onError={(e) => {
                 // Fallback to placeholder if image fails to load
                 const target = e.target as HTMLImageElement;
@@ -142,10 +139,12 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
 
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 expensive-gradient">
-          <img
+          <Image
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             onError={(e) => {
               // Fallback to placeholder if image fails to load
               const target = e.target as HTMLImageElement;

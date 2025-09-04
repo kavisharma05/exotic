@@ -98,7 +98,7 @@ export default function RelatedProducts({ currentProduct }: RelatedProductsProps
 
           {/* Premium Products Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {displayProducts.map((product, index) => (
+            {displayProducts.map((product) => (
               <Link
                 key={product.id}
                 href={`/products/${product.id}`}

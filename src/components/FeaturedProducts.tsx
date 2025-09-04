@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 import ProductCard from "./ProductCard";
 
 const featuredProducts = [
@@ -180,13 +181,13 @@ export default function FeaturedProducts() {
 
         {/* View All Button */}
         <div className="text-center mt-8 sm:mt-12">
-          <a
+          <Link
             href="/products"
             className="inline-flex items-center gap-2 bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg hover:bg-primary/90 transition-colors touch-manipulation"
           >
             View All Products
             <ChevronRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

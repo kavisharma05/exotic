@@ -1,7 +1,7 @@
 "use client";
 
 import { ExtendedProduct } from "@/types/product";
-import { ChevronDown, ChevronUp, Settings, Star, Award, Shield } from "lucide-react";
+import { ChevronDown, ChevronUp, Settings, Star, Shield } from "lucide-react";
 import { useState } from "react";
 
 interface ProductSpecificationsProps {

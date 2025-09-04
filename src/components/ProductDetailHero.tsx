@@ -12,7 +12,6 @@ interface ProductDetailHeroProps {
 
 export default function ProductDetailHero({ product }: ProductDetailHeroProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
   const [selectedColor, setSelectedColor] = useState(product.variants[0].color);
   const [selectedQuantity, setSelectedQuantity] = useState(product.variants[0].quantity);
 
@@ -33,7 +32,6 @@ export default function ProductDetailHero({ product }: ProductDetailHeroProps) {
 
     if (matchingVariant) {
       setSelectedColor(color);
-      setSelectedVariant(matchingVariant);
       setSelectedImageIndex(0);
     } else {
       // If no matching variant, find the first available variant with the selected color
@@ -41,7 +39,6 @@ export default function ProductDetailHero({ product }: ProductDetailHeroProps) {
       if (colorVariant) {
         setSelectedColor(color);
         setSelectedQuantity(colorVariant.quantity);
-        setSelectedVariant(colorVariant);
         setSelectedImageIndex(0);
       }
     }
@@ -55,15 +52,13 @@ export default function ProductDetailHero({ product }: ProductDetailHeroProps) {
 
     if (matchingVariant) {
       setSelectedQuantity(quantity);
-      setSelectedVariant(matchingVariant);
       setSelectedImageIndex(0);
     } else {
       // If no matching variant, find the first available variant with the selected quantity
-      const quantityVariant = product.variants.find(v => v.quantity === quantity && v.available);
-      if (quantityVariant) {
+      const availableVariant = product.variants.find(v => v.quantity === quantity && v.available);
+      if (availableVariant) {
         setSelectedQuantity(quantity);
-        setSelectedColor(quantityVariant.color);
-        setSelectedVariant(quantityVariant);
+        setSelectedColor(availableVariant.color);
         setSelectedImageIndex(0);
       }
     }
@@ -206,7 +201,6 @@ export default function ProductDetailHero({ product }: ProductDetailHeroProps) {
               </h3>
               <div className="flex flex-wrap gap-3">
                 {uniqueQuantities.map((quantity) => {
-                  const quantityVariant = product.variants.find(v => v.quantity === quantity);
                   const isAvailable = product.variants.some(v => v.quantity === quantity && v.available);
                   return (
                     <button

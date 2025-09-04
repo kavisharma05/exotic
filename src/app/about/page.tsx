@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { 
   Heart, 
   Shield, 
@@ -310,13 +311,13 @@ export default function AboutPage() {
                 <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               
-              <a
+              <Link
                 href="/products"
                 className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-200 touch-manipulation w-full sm:w-auto optimized-button-secondary"
               >
                 View Our Products
                 <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
+              </Link>
             </div>
 
           </div>

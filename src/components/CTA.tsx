@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -48,13 +49,13 @@ export default function CTA() {
               <ArrowRight className="w-5 h-5" />
             </a>
             
-            <a
+            <Link
               href="/products"
               className="inline-flex items-center gap-2 bg-white hover:bg-primary text-primary hover:text-white border-2 border-primary hover:border-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg transition-colors duration-200 touch-manipulation gpu-accelerated w-full sm:w-auto"
             >
               Browse Products
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
 
           {/* Optimized Trust Indicators - Always Single Row */}

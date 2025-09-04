@@ -13,7 +13,8 @@ export async function generateStaticParams() {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
-  const product = enhancedProducts.find((p) => p.id === params.id);
+  const resolvedParams = await params;
+  const product = enhancedProducts.find((p) => p.id === resolvedParams.id);
 
   if (!product) {
     return {
@@ -56,8 +57,9 @@ export async function generateMetadata({ params }: ProductDetailPageProps): Prom
   };
 }
 
-export default function ProductDetailPageRoute({ params }: ProductDetailPageProps) {
-  const product = enhancedProducts.find((p) => p.id === params.id);
+export default async function ProductDetailPageRoute({ params }: ProductDetailPageProps) {
+  const resolvedParams = await params;
+  const product = enhancedProducts.find((p) => p.id === resolvedParams.id);
 
   if (!product) {
     notFound();

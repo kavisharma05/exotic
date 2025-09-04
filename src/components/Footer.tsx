@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const [openSections, setOpenSections] = useState<{[key: string]: boolean}>({
@@ -75,12 +76,12 @@ export default function Footer() {
               openSections.products ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
             }`}>
               <ul className="space-y-1 text-sm mb-4">
-                <li><a href="/products/deofresh" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">DeOFRESH</a></li>
-                <li><a href="/products/deofume" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">DeOFume</a></li>
-                <li><a href="/products/cleanpro" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">CleanPro</a></li>
-                <li><a href="/products/hygienemax" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">HygieneMax</a></li>
-                <li><a href="/products/naturalcare" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">NaturalCare</a></li>
-                <li><a href="/products/industrialforce" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">IndustrialForce</a></li>
+                <li><Link href="/products/deofresh" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">DeOFRESH</Link></li>
+                <li><Link href="/products/deofume" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">DeOFume</Link></li>
+                <li><Link href="/products/cleanpro" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">CleanPro</Link></li>
+                <li><Link href="/products/hygienemax" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">HygieneMax</Link></li>
+                <li><Link href="/products/naturalcare" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">NaturalCare</Link></li>
+                <li><Link href="/products/industrialforce" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">IndustrialForce</Link></li>
               </ul>
             </div>
           </div>
@@ -88,12 +89,12 @@ export default function Footer() {
           <div className="hidden sm:block">
             <h4 className="font-semibold mb-4 text-base">Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/products/deofresh" className="text-white/90 hover:text-white transition-colors">DeOFRESH</a></li>
-              <li><a href="/products/deofume" className="text-white/90 hover:text-white transition-colors">DeOFume</a></li>
-              <li><a href="/products/cleanpro" className="text-white/90 hover:text-white transition-colors">CleanPro</a></li>
-              <li><a href="/products/hygienemax" className="text-white/90 hover:text-white transition-colors">HygieneMax</a></li>
-              <li><a href="/products/naturalcare" className="text-white/90 hover:text-white transition-colors">NaturalCare</a></li>
-              <li><a href="/products/industrialforce" className="text-white/90 hover:text-white transition-colors">IndustrialForce</a></li>
+              <li><Link href="/products/deofresh" className="text-white/90 hover:text-white transition-colors">DeOFRESH</Link></li>
+              <li><Link href="/products/deofume" className="text-white/90 hover:text-white transition-colors">DeOFume</Link></li>
+              <li><Link href="/products/cleanpro" className="text-white/90 hover:text-white transition-colors">CleanPro</Link></li>
+              <li><Link href="/products/hygienemax" className="text-white/90 hover:text-white transition-colors">HygieneMax</Link></li>
+              <li><Link href="/products/naturalcare" className="text-white/90 hover:text-white transition-colors">NaturalCare</Link></li>
+              <li><Link href="/products/industrialforce" className="text-white/90 hover:text-white transition-colors">IndustrialForce</Link></li>
             </ul>
           </div>
 
@@ -116,10 +117,10 @@ export default function Footer() {
               openSections.company ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
             }`}>
               <ul className="space-y-1 text-sm mb-4">
-                <li><a href="/about" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">About Us</a></li>
-                <li><a href="/solutions" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Solutions</a></li>
-                <li><a href="/contact" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Contact</a></li>
-                <li><a href="/catalog" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Download Catalog</a></li>
+                <li><Link href="/about" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">About Us</Link></li>
+                <li><Link href="/solutions" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Solutions</Link></li>
+                <li><Link href="/contact" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Contact</Link></li>
+                <li><Link href="/catalog" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Download Catalog</Link></li>
               </ul>
             </div>
           </div>
@@ -127,10 +128,10 @@ export default function Footer() {
           <div className="hidden sm:block">
             <h4 className="font-semibold mb-4 text-base">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/about" className="text-white/90 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/solutions" className="text-white/90 hover:text-white transition-colors">Solutions</a></li>
-              <li><a href="/contact" className="text-white/90 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/catalog" className="text-white/90 hover:text-white transition-colors">Download Catalog</a></li>
+              <li><Link href="/about" className="text-white/90 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/solutions" className="text-white/90 hover:text-white transition-colors">Solutions</Link></li>
+              <li><Link href="/contact" className="text-white/90 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/catalog" className="text-white/90 hover:text-white transition-colors">Download Catalog</Link></li>
             </ul>
           </div>
 
@@ -153,10 +154,10 @@ export default function Footer() {
               openSections.support ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
             }`}>
               <ul className="space-y-1 text-sm mb-4">
-                <li><a href="/help" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Help Center</a></li>
-                <li><a href="/consultation" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Free Consultation</a></li>
-                <li><a href="/installation" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Installation Guide</a></li>
-                <li><a href="/maintenance" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Maintenance</a></li>
+                <li><Link href="/help" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Help Center</Link></li>
+                <li><Link href="/consultation" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Free Consultation</Link></li>
+                <li><Link href="/installation" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Installation Guide</Link></li>
+                <li><Link href="/maintenance" className="text-white/90 hover:text-white transition-colors block py-2 px-3 rounded hover:bg-white/5">Maintenance</Link></li>
               </ul>
             </div>
             
@@ -183,10 +184,10 @@ export default function Footer() {
           <div className="hidden sm:block">
             <h4 className="font-semibold mb-4 text-base">Support</h4>
             <ul className="space-y-2 text-sm mb-6">
-              <li><a href="/help" className="text-white/90 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="/consultation" className="text-white/90 hover:text-white transition-colors">Free Consultation</a></li>
-              <li><a href="/installation" className="text-white/90 hover:text-white transition-colors">Installation Guide</a></li>
-              <li><a href="/maintenance" className="text-white/90 hover:text-white transition-colors">Maintenance</a></li>
+              <li><Link href="/help" className="text-white/90 hover:text-white transition-colors">Help Center</Link></li>
+              <li><Link href="/consultation" className="text-white/90 hover:text-white transition-colors">Free Consultation</Link></li>
+              <li><Link href="/installation" className="text-white/90 hover:text-white transition-colors">Installation Guide</Link></li>
+              <li><Link href="/maintenance" className="text-white/90 hover:text-white transition-colors">Maintenance</Link></li>
             </ul>
             
             {/* Social Media - Desktop */}
@@ -217,11 +218,11 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-row gap-3 sm:gap-6 text-xs sm:text-sm text-white/90 text-center">
-            <a href="/privacy" className="hover:text-white transition-colors whitespace-nowrap">Privacy Policy</a>
+            <Link href="/privacy" className="hover:text-white transition-colors whitespace-nowrap">Privacy Policy</Link>
             <span className="text-white/50">•</span>
-            <a href="/terms" className="hover:text-white transition-colors whitespace-nowrap">Terms of Service</a>
+            <Link href="/terms" className="hover:text-white transition-colors whitespace-nowrap">Terms of Service</Link>
             <span className="text-white/50">•</span>
-            <a href="/cookies" className="hover:text-white transition-colors whitespace-nowrap">Cookie Policy</a>
+            <Link href="/cookies" className="hover:text-white transition-colors whitespace-nowrap">Cookie Policy</Link>
           </div>
         </div>
       </div>

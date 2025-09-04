@@ -8,7 +8,6 @@ import Link from "next/link";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [animateDrawer, setAnimateDrawer] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   // Body scroll lock and accessibility (ESC to close)
   useEffect(() => {

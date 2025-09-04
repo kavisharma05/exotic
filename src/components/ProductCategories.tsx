@@ -1,6 +1,7 @@
 "use client";
 
 import { Droplets, Home, Zap, Toilet, Gem, UtensilsCrossed, Sparkles, Soup, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const categories = [
   {
@@ -122,13 +123,13 @@ export default function ProductCategories() {
 
         {/* Explore All Products Button */}
         <div className="text-center mt-12 sm:mt-16">
-          <a
+          <Link
             href="/products"
             className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg transition-colors duration-200 shadow-lg touch-manipulation gpu-accelerated"
           >
             Explore All Products
             <ChevronRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
