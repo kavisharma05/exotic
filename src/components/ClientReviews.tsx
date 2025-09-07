@@ -6,63 +6,133 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 const reviews = [
   {
     id: 1,
-    name: "Sarah Mitchell",
-    company: "Grand Plaza Hotel",
-    position: "General Manager",
+    name: "Rajesh Kumar",
+    company: "JV Enterprise",
+    position: "Managing Director",
     rating: 5,
-    review: "The fragrance solutions from Zeal Marketing have completely transformed our hotel lobby. Our guests frequently comment on the wonderful ambiance, and it's become a signature part of our brand experience.",
-    image: "/avatars/sarah.jpg",
-    location: "New York, USA"
-  },
-  {
-    id: 2,
-    name: "Ahmed Al-Rashid",
-    company: "Desert Rose Spa",
-    position: "Owner",
-    rating: 5,
-    review: "Exceptional quality and service! The custom blend they created for our spa perfectly captures the essence of relaxation we wanted to achieve. Our clients love the unique scent experience.",
-    image: "/avatars/ahmed.jpg",
-    location: "Dubai, UAE"
-  },
-  {
-    id: 3,
-    name: "Maria Gonzalez",
-    company: "Luxury Retail Chain",
-    position: "Brand Director",
-    rating: 4,
-    review: "Working with Zeal Marketing has elevated our retail environments significantly. The consistent quality and professional approach make them our go-to partner for all locations.",
-    image: "/avatars/maria.jpg",
-    location: "Madrid, Spain"
-  },
-  {
-    id: 4,
-    name: "James Thompson",
-    company: "Elite Car Dealership",
-    position: "Sales Manager",
-    rating: 5,
-    review: "The car fresheners and showroom scenting solutions have made a noticeable difference in our customer experience. Professional service and premium quality products.",
-    image: "/avatars/james.jpg",
-    location: "London, UK"
-  },
-  {
-    id: 5,
-    name: "Priya Sharma",
-    company: "Wellness Center",
-    position: "Founder",
-    rating: 5,
-    review: "The natural and therapeutic fragrances are perfect for our wellness center. They create the calming atmosphere our clients need for their healing journey.",
-    image: "/avatars/priya.jpg",
+    review: "The cleaning solutions from Zeal Marketing have completely transformed our business operations. The quality and effectiveness of their products have exceeded our expectations, and our customers consistently praise the clean, fresh environment.",
+    image: "/avatars/rajesh.jpg",
     location: "Mumbai, India"
   },
   {
+    id: 2,
+    name: "Priya Sharma",
+    company: "Rajesh Grah Udhyog Aurangabad",
+    position: "Operations Manager",
+    rating: 5,
+    review: "Exceptional quality and service! The custom cleaning solutions they provided perfectly meet our industrial requirements. Our facility has never been cleaner, and the products are both effective and safe for our workers.",
+    image: "/avatars/priya.jpg",
+    location: "Aurangabad, India"
+  },
+  {
+    id: 3,
+    name: "Vikram Singh",
+    company: "Laxita Enterprises",
+    position: "General Manager",
+    rating: 4,
+    review: "Working with Zeal Marketing has elevated our cleaning standards significantly. The consistent quality and professional approach make them our trusted partner for all our cleaning needs across multiple locations.",
+    image: "/avatars/vikram.jpg",
+    location: "Delhi, India"
+  },
+  {
+    id: 4,
+    name: "Anita Reddy",
+    company: "Radhika Chemical Hyderabad",
+    position: "Quality Manager",
+    rating: 5,
+    review: "The chemical cleaning solutions have made a remarkable difference in our operations. Professional service, premium quality products, and excellent customer support. Highly recommended for any business.",
+    image: "/avatars/anita.jpg",
+    location: "Hyderabad, India"
+  },
+  {
+    id: 5,
+    name: "Dr. Suresh Patel",
+    company: "Vijay Shree Chemicals Hyderabad",
+    position: "Director",
+    rating: 5,
+    review: "The specialized cleaning formulations are perfect for our chemical manufacturing facility. They create the safe, hygienic environment our workers need while maintaining the highest quality standards.",
+    image: "/avatars/suresh.jpg",
+    location: "Hyderabad, India"
+  },
+  {
     id: 6,
-    name: "Robert Chen",
-    company: "Tech Corporate Office",
+    name: "Mrs. Kavita Mehta",
+    company: "Vedaant Pre School",
+    position: "Principal",
+    rating: 4,
+    review: "Implementing their child-safe cleaning solutions has improved our school environment remarkably. Parents and staff have noted the positive change in cleanliness and safety standards.",
+    image: "/avatars/kavita.jpg",
+    location: "Pune, India"
+  },
+  {
+    id: 7,
+    name: "Amit Jain",
+    company: "New Dev Shree Store Indore",
+    position: "Store Manager",
+    rating: 5,
+    review: "The retail cleaning solutions have transformed our store environment. Our customers frequently comment on the clean, fresh atmosphere, and it's become a key part of our customer experience.",
+    image: "/avatars/amit.jpg",
+    location: "Indore, India"
+  },
+  {
+    id: 8,
+    name: "Dr. Rajesh Bhandari",
+    company: "Bhandari Hospital",
+    position: "Chief Medical Officer",
+    rating: 5,
+    review: "The medical-grade cleaning solutions are essential for our hospital operations. They provide the hygiene and safety standards we require while being gentle on sensitive medical equipment and surfaces.",
+    image: "/avatars/rajesh_b.jpg",
+    location: "Mumbai, India"
+  },
+  {
+    id: 9,
+    name: "Dr. Priya Varma",
+    company: "V-One Hospital",
+    position: "Administrator",
+    rating: 4,
+    review: "Our hospital has seen significant improvements in cleanliness and hygiene since implementing Zeal Marketing's solutions. The products are effective, safe, and meet all our medical facility requirements.",
+    image: "/avatars/priya_v.jpg",
+    location: "Bangalore, India"
+  },
+  {
+    id: 10,
+    name: "Mrs. Sunita Desai",
+    company: "Lokmanya Vidhyaniketan",
+    position: "Principal",
+    rating: 5,
+    review: "The educational institution cleaning solutions have created a healthier learning environment for our students. The products are safe, effective, and help maintain the high standards our school is known for.",
+    image: "/avatars/sunita.jpg",
+    location: "Mumbai, India"
+  },
+  {
+    id: 11,
+    name: "Mr. Ravi Kumar",
+    company: "Delhi Public School",
     position: "Facilities Manager",
     rating: 4,
-    review: "Implementing their office fragrance solutions has improved our workplace environment remarkably. Employees have noted the positive change in office ambiance.",
-    image: "/avatars/robert.jpg",
-    location: "Singapore"
+    review: "The comprehensive cleaning solutions have elevated our school's maintenance standards. Students, parents, and staff all appreciate the clean, fresh environment that supports better learning outcomes.",
+    image: "/avatars/ravi.jpg",
+    location: "Delhi, India"
+  },
+  {
+    id: 12,
+    name: "Dr. Anil Tejankar",
+    company: "Tejankar Hospital Ujjain",
+    position: "Medical Director",
+    rating: 5,
+    review: "The hospital-grade cleaning solutions have been instrumental in maintaining our facility's hygiene standards. Professional service, reliable products, and excellent support make them our preferred partner.",
+    image: "/avatars/anil.jpg",
+    location: "Ujjain, India"
+  },
+  {
+    id: 13,
+    name: "Mr. Sanjay Agarwal",
+    company: "Hotel Sarovar Portico",
+    position: "General Manager",
+    rating: 5,
+    review: "The hospitality cleaning solutions have enhanced our guest experience significantly. Our guests frequently compliment the clean, fresh ambiance, and it's become a signature part of our hotel's brand experience.",
+    image: "/avatars/sanjay.jpg",
+    location: "Mumbai, India"
   }
 ];
 
@@ -93,12 +163,12 @@ export default function ClientReviews() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
-            What Our Clients Say
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
+            Loved by Our Customers
           </h2>
           <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Trusted by businesses worldwide, our fragrance solutions have transformed 
-            countless spaces and created memorable experiences.
+            Trusted by businesses worldwide, our cleaning solutions have transformed 
+            countless spaces and created exceptional experiences for our valued customers.
           </p>
         </div>
 
@@ -127,50 +197,57 @@ export default function ClientReviews() {
               {getCurrentReviews.map((review) => (
                 <div
                   key={review.id}
-                  className="bg-white rounded-2xl p-5 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-200 border border-gray-100 min-h-[280px] sm:h-[300px] flex flex-col optimize-animations"
+                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-200 border border-gray-100 h-[320px] flex flex-col optimize-animations"
                 >
                   {/* Quote Icon */}
-                  <div className="mb-3 sm:mb-4">
-                    <Quote className="w-5 h-5 sm:w-6 sm:h-6 text-primary/30" />
+                  <div className="mb-3">
+                    <Quote className="w-5 h-5 text-primary/30" />
                   </div>
 
                   {/* Rating */}
                   <div className="flex items-center mb-3">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-4 h-4 ${
-                          i < review.rating
-                            ? 'text-yellow-400 fill-current'
-                            : 'text-gray-300'
-                        }`}
-                      />
-                    ))}
+                    <div className="flex items-center">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-4 h-4 ${
+                            i < review.rating
+                              ? 'text-yellow-400 fill-current'
+                              : 'text-gray-300'
+                          }`}
+                        />
+                      ))}
+                    </div>
                     <span className="ml-2 text-sm text-gray-600">
                       {review.rating}.0
                     </span>
                   </div>
 
                   {/* Review Text */}
-                  <p className="text-gray-700 mb-4 leading-relaxed flex-grow text-sm sm:text-base">
-                    &ldquo;{review.review}&rdquo;
-                  </p>
+                  <div className="flex-grow mb-4">
+                    <p className="text-gray-700 leading-relaxed text-sm line-clamp-6">
+                      &ldquo;{review.review}&rdquo;
+                    </p>
+                  </div>
 
-                  {/* Customer Info */}
-                  <div className="flex items-center mt-auto">
+                  {/* Customer Info - Fixed at bottom */}
+                  <div className="flex items-center pt-3 border-t border-gray-100">
                     {/* Avatar Placeholder */}
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
-                      <span className="text-primary font-semibold text-sm sm:text-lg">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                      <span className="text-primary font-semibold text-sm">
                         {review.name.charAt(0)}
                       </span>
                     </div>
                     
-                    <div className="min-w-0">
-                      <h4 className="font-semibold text-gray-900 truncate text-sm sm:text-base">
+                    <div className="min-w-0 flex-1">
+                      <h4 className="font-semibold text-gray-900 text-sm mb-1 truncate">
                         {review.name}
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 truncate">
-                        {review.position}, {review.company}
+                      <p className="text-xs text-gray-500 truncate">
+                        {review.position}
+                      </p>
+                      <p className="text-xs text-gray-400 truncate">
+                        {review.company}
                       </p>
                     </div>
                   </div>

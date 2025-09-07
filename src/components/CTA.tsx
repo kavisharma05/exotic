@@ -21,22 +21,17 @@ export default function CTA() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16">
         <div className="max-w-5xl mx-auto text-center">
           
-          {/* Optimized Premium Badge */}
-          <div className="inline-flex items-center gap-2 badge-bg text-primary px-6 py-3 rounded-full text-sm font-semibold mb-8 border border-primary/20 optimized-shadow">
-            Premium Fragrance Solutions
-          </div>
-
           {/* Main Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
             Ready to Transform 
             <span className="block bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Your Space?
+              Your Cleaning Experience?
             </span>
           </h2>
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-gray-600 mb-12 sm:mb-16 max-w-3xl mx-auto leading-relaxed">
-            Create signature scent experiences that perfectly capture your brand&apos;s essence and leave lasting impressions on your customers.
+            Discover premium cleaning solutions that deliver exceptional results and create lasting impressions for your business and customers.
           </p>
 
           {/* Optimized CTA Buttons */}

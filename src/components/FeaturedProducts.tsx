@@ -129,12 +129,11 @@ export default function FeaturedProducts() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Featured Products
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            Discover Our Best Sellers
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Discover our handpicked selection of premium fragrances, each crafted with 
-            the finest ingredients to create unforgettable scent experiences.
+            Explore our most loved and trusted cleaning essentials - handpicked selection of premium solutions crafted for exceptional results.
           </p>
         </div>
 

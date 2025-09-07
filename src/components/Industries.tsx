@@ -62,12 +62,12 @@ export default function Industries() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Industries We Serve
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            Trusted Across Industries
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            From hospitality to healthcare, we provide tailored fragrance solutions 
-            across diverse industries worldwide.
+            From hospitality to healthcare, we provide tailored cleaning solutions 
+            across diverse industries worldwide - trusted by businesses of all sizes.
           </p>
         </div>
 

@@ -70,12 +70,11 @@ export default function ProductCategories() {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-            Product Categories
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4 tracking-tight">
+            Find Your Perfect Clean
           </h2>
           <p className="text-base sm:text-lg text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed">
-            Explore our diverse range of fragrance categories, each carefully crafted 
-            to meet your specific needs and preferences.
+            Explore our comprehensive range of cleaning categories - from gentle soaps to powerful cleaners, each designed for specific cleaning needs and superior results.
           </p>
         </div>
 
